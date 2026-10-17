@@ -77,3 +77,7 @@ python -m unittest discover -s tests -v
 Descriptive outliers are not diagnoses. The observational sample is not evidence of a causal relationship between activity and sleep quality or representative population norms.
 
 Raw observations and classroom slide materials are not included. For new analyses, provide your own authorized counts or CSV. No client deployment or commercial result is claimed.
+
+## Reuse
+
+The original contributions listed in [LICENSING.md](LICENSING.md) are available under [MIT](LICENSE). This scoped grant preserves upstream notices and separate dataset, simulator, notebook and checkpoint terms.
