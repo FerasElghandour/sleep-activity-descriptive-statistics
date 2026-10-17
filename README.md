@@ -1,18 +1,51 @@
 # Sleep and Activity Descriptive Statistics
 
-**Feras Elghandour** · Technical case study
-
 Summarize variation in activity, daily steps, and heart rate with explicit distinctions between sample and population standard deviations.
 
 ## Implementation
 
 A CSV-to-JSON statistics command with linear-interpolated quartiles, modes, IQR fences, and outlier counts. The historical aggregate study is included separately from the executable implementation.
 
-```mermaid
-flowchart LR
-    A[Observations] --> B[Validated counts or measurements]
-    B --> C[Statistical calculations]
-    C --> D[Interpretable JSON results]
+![Implementation mechanism: Named numeric observations → Reject invalid nonfinite inputs → Sort and interpolate quartiles → Compute sample or population deviation → Report IQR fences and descriptive summary](assets/mechanism.svg)
+
+## Try a small example
+
+A small offline fixture exercises the public implementation. It demonstrates the behavior shown below; it does not replace the historical dataset, benchmark or production validation.
+
+After the local setup below, run from the repository root:
+
+```sh
+python examples/quickstart.py
+```
+
+The [example source](examples/quickstart.py), [captured output](examples/expected-output.txt) and [execution record](examples/environment.json) keep this demonstration inspectable. Floating-point values may vary with library versions.
+
+Observed output from this run:
+
+```text
+{
+  "n": 4,
+  "mean": 2.5,
+  "median": 2.5,
+  "modes": [
+    1.0,
+    2.0,
+    3.0,
+    4.0
+  ],
+  "sample_sd": 1.2909944487358056,
+  "population_sd": 1.118033988749895,
+  "min": 1.0,
+  "max": 4.0,
+  "q1": 1.75,
+  "q3": 3.25,
+  "iqr": 1.5,
+  "outlier_fences": [
+    -0.5,
+    5.5
+  ],
+  "outlier_count": 0
+}
 ```
 
 ## Results
