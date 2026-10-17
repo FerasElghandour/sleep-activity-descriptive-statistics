@@ -8,6 +8,15 @@ A CSV-to-JSON statistics command with linear-interpolated quartiles, modes, IQR 
 
 ![Implementation mechanism: Named numeric observations → Reject invalid nonfinite inputs → Sort and interpolate quartiles → Compute sample or population deviation → Report IQR fences and descriptive summary](assets/mechanism.svg)
 
+
+
+## Reproduce and inspect
+
+The executable reproduction profile now records exact commands, input/source hashes, dependency versions, logs and pass/fail status. Its scope distinguishes behavior checks from full-data benchmarks.
+
+[Commands, artifacts and benchmark scope](BENCHMARKS.md) · [Versioned profiles](reproduction.json)
+
+
 ## Try a small example
 
 A small offline fixture exercises the public implementation. It demonstrates the behavior shown below; it does not replace the historical dataset, benchmark or production validation.
