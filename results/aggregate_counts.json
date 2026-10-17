@@ -1,0 +1,74 @@
+{
+  "n": 374,
+  "Physical Activity Level": {
+    "mean": 59.17112299465241,
+    "median": 60.0,
+    "modes": [
+      60
+    ],
+    "sample_sd": 20.83080365807167,
+    "population_sd": 20.802936349731223,
+    "min": 30,
+    "max": 90,
+    "range": 60,
+    "q1": 45.0,
+    "q3": 75.0,
+    "iqr": 30.0,
+    "outlier_fences": [
+      0.0,
+      120.0
+    ],
+    "outlier_count": 0,
+    "outliers": {}
+  },
+  "Daily Steps": {
+    "mean": 6816.844919786096,
+    "median": 7000.0,
+    "modes": [
+      8000
+    ],
+    "sample_sd": 1617.915679133636,
+    "population_sd": 1615.7512424734216,
+    "min": 3000,
+    "max": 10000,
+    "range": 7000,
+    "q1": 5600.0,
+    "q3": 8000.0,
+    "iqr": 2400.0,
+    "outlier_fences": [
+      2000.0,
+      11600.0
+    ],
+    "outlier_count": 0,
+    "outliers": {}
+  },
+  "Heart Rate": {
+    "mean": 70.16577540106952,
+    "median": 70.0,
+    "modes": [
+      68
+    ],
+    "sample_sd": 4.135675535112216,
+    "population_sd": 4.13014285633396,
+    "min": 65,
+    "max": 86,
+    "range": 21,
+    "q1": 68.0,
+    "q3": 72.0,
+    "iqr": 4.0,
+    "outlier_fences": [
+      62.0,
+      78.0
+    ],
+    "outlier_count": 15,
+    "outliers": {
+      "85": 3,
+      "82": 1,
+      "80": 3,
+      "81": 2,
+      "84": 2,
+      "83": 2,
+      "86": 2
+    }
+  }
+}
